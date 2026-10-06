@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameHub Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">GAME<span>HUB</span></div>
+    <div class="top-actions">
+      <button>🎮 Games</button>
+      <button>🏆 Leaderboard</button>
+      <div class="balance">Points: <b id="points">1535</b></div>
+      <button class="round">↻</button>
+      <button class="round">⚙</button>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <span class="live-dot"></span>
+    <b>LIVE GAMES</b>
+    <span>Cricket Quiz</span>
+    <span>Football Challenge</span>
+    <span>Card Memory</span>
+    <span>Arcade</span>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>GAME CATEGORIES</h3>
+      <button class="cat active">⊞ All Games</button>
+      <button class="cat">⊞ Sports</button>
+      <button class="cat">⊞ Arcade</button>
+      <button class="cat">⊞ Card Games</button>
+      <button class="cat">⊞ Puzzle</button>
+      <button class="cat">⊞ Quiz</button>
+      <button class="cat">⊞ Racing</button>
+      <button class="cat">⊞ Strategy</button>
+      <button class="cat">⊞ Multiplayer</button>
+      <button class="cat">⊞ New Games</button>
+    </aside>
+
+    <main class="content">
+      <section class="matches">
+        <div class="match-head">
+          <b>LIVE CHALLENGES</b>
+          <span>Demo points only</span>
+        </div>
+        <div class="match-row">
+          <span>🏏 India Quiz vs Australia Quiz</span>
+          <strong>Play</strong>
+          <span>⭐ 120 XP</span>
+        </div>
+        <div class="match-row">
+          <span>⚽ Football Skills Challenge</span>
+          <strong>Play</strong>
+          <span>⭐ 100 XP</span>
+        </div>
+        <div class="match-row">
+          <span>🎾 Tennis Reflex Challenge</span>
+          <strong>Play</strong>
+          <span>⭐ 150 XP</span>
+        </div>
+      </section>
+
+      <section class="game-grid" id="gameGrid"></section>
+    </main>
+  </div>
+
+  <div class="support" onclick="showSupport()">💬</div>
+  <script src="script.js"></script>
+</body>
+</html>
